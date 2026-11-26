@@ -1,4 +1,4 @@
-name: Build
+name: Build SlinkyTweaker
 
 on:
   push:
@@ -32,7 +32,7 @@ jobs:
         working-directory: Loader
         run: go mod download
 
-      - name: Build
+      - name: Build SlinkyTweaker
         shell: powershell
         run: powershell -NoProfile -ExecutionPolicy Bypass -File Loader/build.ps1
 
